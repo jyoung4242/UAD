@@ -4,7 +4,10 @@ import "./style.css";
 import Container from "./components/Container";
 
 const template = `
-    <\${Container === greet}>
+    <div>
+      <p>test</p>
+      <\${Container === greet}>
+    </div>
 `;
 
 const model = {
