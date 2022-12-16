@@ -1,6 +1,6 @@
 export default class Container {
   // Queried by parent to create markup
-  public static template = "<div>Hello, ${name}</div>";
+  public static template = `<div>Hello, \${name}</div>`;
 
   // Called by parent to create model
   public static create(state: { name: string }): Container {

@@ -4,8 +4,7 @@ import "./style.css";
 import Container from "./components/Container";
 
 const template = `
-    <div>
-      <p>test</p>
+    <div class="container">
       <\${Container === greet}>
     </div>
 `;
