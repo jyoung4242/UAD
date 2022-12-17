@@ -12,7 +12,9 @@ const template = `
 const model = {
   Container,
   greet: { name: "Mookie" },
+  counter: 0,
 };
 
+UI.initialize();
 UI.create(document.body, template, model);
-UI.initialize(1000 / 60);
+setInterval(() => model.counter++, 1000);
