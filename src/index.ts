@@ -12,8 +12,8 @@ const template = `
 
 const model = {
   Container,
-  Button,
   greet: {
+    Button,
     name: "Mookie",
     Button1: {
       text: "Inc",
