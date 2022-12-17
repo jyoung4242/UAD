@@ -5,7 +5,7 @@ import { Container } from "./components/Container";
 
 const template = `
     <div class="container">
-      <\${Container === greet}>
+      <\${ Container === greet}>
     </div>
 `;
 
