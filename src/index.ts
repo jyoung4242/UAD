@@ -1,7 +1,7 @@
 import { UI } from "@peasy-lib/peasy-ui";
 import "./style.css";
 
-import Container from "./components/Container";
+import { Container } from "./components/Container";
 
 const template = `
     <div class="container">

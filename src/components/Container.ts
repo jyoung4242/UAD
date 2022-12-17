@@ -1,4 +1,4 @@
-export default class Container {
+export class Container {
   // Queried by parent to create markup
   public static template = `<div>Hello, \${name}</div>`;
 
