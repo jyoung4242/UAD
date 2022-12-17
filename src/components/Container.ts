@@ -5,6 +5,8 @@ export default class Container {
   public static template = `
   <div class="test">
     <p>Welcome \${name}</p>
+    <\${ Button === Button1}>
+    <\${ Button === Button2}>
   </div>`;
 
   // Called by parent to create model
