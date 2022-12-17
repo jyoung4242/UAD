@@ -4,7 +4,7 @@ export default class Container {
   // Queried by parent to create markup
   public static template = `
   <div class="test">
-    <p>Welcome \${state.name}</p>
+    <p>Welcome \${name}</p>
   </div>`;
 
   // Called by parent to create model
@@ -18,6 +18,7 @@ export default class Container {
   }
 }
 /**
- * <\${ Button === state.Button1}>
-    <\${ Button === state.Button2}>
+ *
+ *  <\${ Button === Button1}>
+    <\${ Button === Button2}>
  */
