@@ -9,13 +9,28 @@ export default class Container {
     <\${ Button === Button2}>
   </div>`;
 
+  private Button = Button;
+
+  private Button1 = {
+    text: "Inc2",
+    click: () => {
+      console.log("clicked inc2");
+    },
+  };
+  private Button2 = {
+    text: "Dec2",
+    click: () => {
+      console.log("clicked dec2");
+    }
+  };
+
   // Called by parent to create model
-  public static create(state: { Button: Button; name: string; Button1: object; Button2: object }): Container {
+  public static create(state: { name: string, self: any }): Container {
     console.log(state);
-    return new Container(state.name, state.Button1, state.Button2, state.Button);
+    return new Container(state.name);
   }
 
-  public constructor(public name: string, Button1: object, Button2: object, Button: Button) {
-    console.log(Button, name, Button1, Button2);
+  public constructor(public name: string) {
+    console.log(name);
   }
 }

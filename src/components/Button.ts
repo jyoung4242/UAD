@@ -7,5 +7,5 @@ export default class Button {
     return new Button(state.text, state.click);
   }
 
-  public constructor(public text: string, click: Function) {}
+  public constructor(public text: string, public click: Function) {}
 }
