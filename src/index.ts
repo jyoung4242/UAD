@@ -9,14 +9,12 @@ const template = `
     </div>
 `;
 
-let model = {};
-Object.assign(model, {
+let model = {
   Container,
   greet: {
-    self: model,
     name: "Mookie",
   },
-});
+};
 
 UI.initialize();
 UI.create(document.body, template, model);
