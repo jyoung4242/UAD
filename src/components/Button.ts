@@ -4,11 +4,8 @@ export default class Button {
 
   // Called by parent to create model
   public static create(state: { text: string; click: Function }): Button {
-    console.log("button state", state);
     return new Button(state.text, state.click);
   }
 
-  public constructor(public text: string, public click: Function) {
-    console.log("button constructor", text, click);
-  }
+  public constructor(public text: string, public click: Function) {}
 }

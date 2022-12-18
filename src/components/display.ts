@@ -4,11 +4,8 @@ export default class Display {
 
   // Called by parent to create model
   public static create(state: { text: string }): Display {
-    console.log("Input state", state);
     return new Display(state.text);
   }
 
-  public constructor(public text: string) {
-    console.log("input constructor", text);
-  }
+  public constructor(public text: string) {}
 }

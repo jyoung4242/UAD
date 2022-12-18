@@ -21,8 +21,10 @@ export default class Container {
     text: "Inc",
     click: () => {
       let localNum = parseInt(this.myDisplay.text);
+      console.log("pre change: ", localNum);
       localNum += 1;
       this.myDisplay.text = localNum.toString();
+      console.log("after change: ", this.myDisplay.text);
     },
   };
 
@@ -30,8 +32,10 @@ export default class Container {
     text: "Dec",
     click: () => {
       let localNum = parseInt(this.myDisplay.text);
+      console.log("pre change: ", localNum);
       if (localNum > 0) localNum -= 1;
       this.myDisplay.text = localNum.toString();
+      console.log("after change: ", this.myDisplay.text);
     },
   };
 
