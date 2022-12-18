@@ -18,7 +18,7 @@ export default class Container {
   private Display = Display;
 
   private Button1 = {
-    text: "Inc2",
+    text: "Inc",
     click: () => {
       let localNum = parseInt(this.myDisplay.text);
       localNum += 1;
@@ -27,7 +27,7 @@ export default class Container {
   };
 
   private Button2 = {
-    text: "Dec2",
+    text: "Dec",
     click: () => {
       let localNum = parseInt(this.myDisplay.text);
       if (localNum > 0) localNum -= 1;
