@@ -45,3 +45,42 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/*BEGIN STYLING HERE*/
+
+.UI {
+  padding-top: 5px;
+
+  position: relative;
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20%;
+  border: 1px solid black;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.myInput {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.myButton {
+  width: 50px;
+  height: 30px;
+}
+
+.buttonFlex {
+  position: absolute;
+  bottom: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
