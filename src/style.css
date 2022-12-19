@@ -49,16 +49,18 @@ img {
 /*BEGIN STYLING HERE*/
 
 .UI {
-  padding-top: 5px;
-
   position: relative;
-  width: 300px;
-  height: 150px;
-  margin-left: 10%;
-  margin-top: 5%;
-  border: 2px solid black;
-  border-radius: 10px;
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 10%;
+  height: 100%;
+  background-color: #2c4a69;
 }
 
 .myInput {
