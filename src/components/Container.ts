@@ -1,6 +1,7 @@
 import Button from "./Button";
 import Display from "./display";
 import NavBar from "./navbar";
+import Header from "./Header";
 
 interface IContainerState {
   name: string;
@@ -11,14 +12,18 @@ export default class Container {
   // Queried by parent to create markup
   public static template = `
   <div class="UI">
-    <\${NavBar === nabState}>
-    <div class="header">header</div>
-    <div class="content">content</div>
+    <\${NavBar === navState}>
+    <\${Header === headerState}>
+    <div class="content"></div>
   </div>`;
 
   private NavBar = NavBar;
-  private nabState = {
-    text: "navbar",
+  private navState = {
+    text: "UAD",
+  };
+  private Header = Header;
+  private headerState = {
+    text: "UNIVERSAL ANNOUNCEMENT - DASHBOARD",
   };
 
   // Called by parent to create model
